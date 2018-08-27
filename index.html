@@ -180,7 +180,20 @@ li a:hover:not(.active) {
 <center><a href="#top"><i class="em em-arrow_up"></i></a></center>
 <center><h3><span class="montserrat">&#9679; Strona stworzona przez <b><a href="http://fackcraft.tk">FackCraft</a></b> przerobiona na potrzeby senge1337.</span></h3></center>
 	</div>
+<script>
+window.onscroll = function() {myFunction()};
 
+var navbar = document.getElementById("navbar");
+var sticky = navbar.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+</script>
 	
 </body>
 </html>
