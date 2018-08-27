@@ -6,6 +6,10 @@
 
 	<title>senge1337</title>
 
+	<link rel="stylesheet" href="css/form.css">
+    	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    	<script src="https://www.google.com/recaptcha/api.js"></script>
+	
 	<link rel="stylesheet" href="css/custom.css" />
 	<link rel="stylesheet" href="css/animate.css" />
 	<link rel='stylesheet' type='text/css' href='https://fonts.googleapis.com/css?family=Montserrat' />
@@ -21,6 +25,7 @@
 	<meta property="og:description" content="Servidor de minecraft 24/7 no premium"/>
 	<meta name="description" content="Servidor de minecraft 24/7 no premium"/>
 	<meta name="keywords" content="servidor,de,minecraft,pirata,no premium,original"/>
+	<meta name="viewport" content="width=device-width,initial-scale=1">
 	<script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -136,35 +141,43 @@ li a:hover:not(.active) {
 			<span class="montserrat"><i class="em em-apple"></i> Witaj na oficjalnej stronie senge1337! <i class="em em-flag-pl"></i></span>
 		</div>
 		<b id="contact"><br /></b>
-		<center><h2 class="montserrat">Formularz kontaktowy</h2></center>
-	<div id="send_form_status"></div>
-<center><form method="post" action="/send_form.php" id="contact_form">
-     <div><label for="name">Imię i nazwisko</label></div>
-     <div><input type="text" name="name" id="name" class="formField" /></div>
-     <div><label for="phone">Numer telefonu</label></div>
-     <div><input type="text" name="phone" id="phone" class="formField" /></div>
-     <div><label for="email">Adres email</label></div>
-     <div><input type="text" name="email" id="email" class="formField" /></div>
-     <div><label for="message">Treść wiadomości</label></div>
-     <div><textarea name="message" id="message" class="formField"></textarea></div>
-     <div><button id="sendBtn">Wyślij</button></div>
-</form>
-</center>
-<script>
-$(document).ready(function() {
-  $("html").on("submit","#contact_form",function(e){
-    e.preventDefault();
-    $("#send_form_status").html('').hide();
-    var data=$("#contact_form").serialize();
-    $.post("/send_form.php",data,function(res){
-      $("#send_form_status").html(res.msg).show();
-      if(res.status==1){ 
-        $("#contact_form")[0].reset();
-      } 
-    });
-  });
-});
-</script>
+		<button id="open-contact-btn" class="main-btn">
+    <i class="fa fa-envelope-o" aria-hidden="true"></i> Formularz kontaktowy
+</button>
+
+<div id="formularz-kontaktowy" class="contact" role="dialog" aria-label="Formularz kontaktowy" aria-hidden="true">
+    <form class="emailForm" method="POST" action="https://formspree.io/your.email@example.com">
+        <label class="half" aria-live="polite">
+            Twój email
+            <input class="form-data" name="email" type="email" placeholder="Wpisz tu twój email" required>
+        </label>
+        <label class="half" aria-live="polite">
+            Temat
+            <input class="form-data" name="_subject" placeholder="Wpisz tu temat wiadomości" minlength="4" maxlength="78"
+                   required>
+        </label>
+        <label aria-live="polite">
+            Wiadomość
+            <textarea class="form-data" name="message" placeholder="Wpisz tu twoją wiadomość" minlength="4"
+                      maxlength="6000" required></textarea>
+        </label>
+        <label class="recaptcha-label" aria-live="polite">
+            <div class="g-recaptcha" tabindex="-1" data-sitekey="6LevbxMUAAAAAIa8dsrFNJn0S_b_t5K8INV4z2JD"
+                 data-callback="recaptchaClearErr"></div>
+        </label>
+        <button class="emailFormSubmit main-btn" name="submit" type="submit">Wyślij</button>
+
+        <div class="emailFormAlert" aria-live="polite"></div>
+    </form>
+
+    <button type="button" id="close-contact-btn" class="close-btn" aria-label="Zamknij formularz kontaktowy"
+            title="Zamknij formularz kontaktowy">
+        <i class="fa fa-times close-form"></i>
+    </button>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+<script src="js/emailform.js"></script>
 	</div>
 <center><a href="#top"><i class="em em-arrow_up"></i></a></center>
 <center><h3><span class="montserrat">&#9679; Strona stworzona przez <b><a href="http://fackcraft.tk">FackCraft</a></b> przerobiona na potrzeby senge1337.</span></h3></center>
