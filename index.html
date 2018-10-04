@@ -1,200 +1,205 @@
-
-
 <!DOCTYPE html>
-<html>
+<html >
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-body {
-  margin: 0;
-}
-
-
-
-#navbar {
-  overflow: hidden;
-  background-color: #333;
-}
-
-#navbar a {
-  float: left;
-  display: block;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
-}
-
-#navbar a:hover {
-  background-color: #ddd;
-  color: black;
-}
-
-#navbar a.active {
-  background-color: #4CAF50;
-  color: white;
-}
-
-.content {
-  padding: 16px;
-}
-
-.sticky {
-  position: fixed;
-  top: 0;
-  width: 100%;
-}
-
-.sticky + .content {
-  padding-top: 60px;
-}
-</style>
-	<title>senge1337</title>
-
-	<link rel="stylesheet" href="css/form.css">
-    	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    	<script src="https://www.google.com/recaptcha/api.js"></script>
-	
-	<link rel="stylesheet" href="css/custom.css" />
-	<link rel="stylesheet" href="css/animate.css" />
-	<link rel='stylesheet' type='text/css' href='https://fonts.googleapis.com/css?family=Montserrat' />
-	<link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet">
-
-	<link rel="icon" href="http://fackcraft.tk/img/favicon.png" />
-	<link rel="image" href="http://fackcraft.tk/img/favicon.png" />
-	
-	
-	<meta property="og:title" content="senge1337" />
-	<meta property="og:type" content="website" />
-	<meta property="og:image" content="img/favicon.png" />
-	<meta property="og:description" content="Servidor de minecraft 24/7 no premium"/>
-	<meta name="description" content="Servidor de minecraft 24/7 no premium"/>
-	<meta name="keywords" content="servidor,de,minecraft,pirata,no premium,original"/>
-	<meta name="viewport" content="width=device-width,initial-scale=1">
-	<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-88897118-1', 'auto');
-  ga('send', 'pageview');
-</script>
-
-
-<script>
-$(document).ready(function(){
-  // Add smooth scrolling to all links
-  $("a").on('click', function(event) {
-
-    // Make sure this.hash has a value before overriding default behavior
-    if (this.hash !== "") {
-      // Prevent default anchor click behavior
-      event.preventDefault();
-
-      // Store hash
-      var hash = this.hash;
-
-      // Using jQuery's animate() method to add smooth page scroll
-      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-      $('html, body').animate({
-        scrollTop: $(hash).offset().top
-      }, 800, function(){
-   
-        // Add hash (#) to URL when done scrolling (default click behavior)
-        window.location.hash = hash;
-      });
-    } // End if
-  });
-});
-</script>
- <style>
-body, html, .main {
-    height: 100%;
-}
-
-section {
-    min-height: 100%;
-}
-</style>
-<style>
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #333;
-}
-
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-}
-
-li a:hover:not(.active) {
-    background-color: #111;
-}
-
-.active {
-    background-color: #4CAF50;
-}
-</style>
+  <!-- Site made with Mobirise Website Builder v4.8.4, https://mobirise.com -->
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="Mobirise v4.8.4, mobirise.com">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+  <link rel="shortcut icon" href="assets/images/logo2.png" type="image/x-icon">
+  <meta name="description" content="">
+  <title>Home</title>
+  <link rel="stylesheet" href="assets/web/assets/mobirise-icons/mobirise-icons.css">
+  <link rel="stylesheet" href="assets/tether/tether.min.css">
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-grid.min.css">
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-reboot.min.css">
+  <link rel="stylesheet" href="assets/socicon/css/styles.css">
+  <link rel="stylesheet" href="assets/dropdown/css/style.css">
+  <link rel="stylesheet" href="assets/theme/css/style.css">
+  <link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css" type="text/css">
+  
+  
+  
 </head>
 <body>
-	<style>
-		.banner { display: block; }
-		.server { display: block; }
-		.icon1 { display: block; }
-		.icon2 { display: none; }
-		.icon3 { display: block; }
-		.icon4 { display: none; }
-		.icon5 { display: block; }
-		.icon6 { display: none; }
-		.icon7 { display: none; }
-		.icon8 { display: none; }
-	</style>
-	<div id="top" class="header animated slideInDown">
-		<div class="banner">
-			<span class='montserrat'><i class="em em-zap"></i> Oficjalna strona senge1337 <i class="em em-watermelon"></i></span>
-		</div>
-<div id="navbar">
-  <a class="active" href="javascript:void(0)">Home</a>
-  <a href="javascript:void(0)">News</a>
-  <a href="javascript:void(0)">Contact</a>
-</div>
-		</div>
-	<div class="logo animated slideInDown">
-<br />
-		<center><img class="logo animated pulse infinite" width=625 height=250 src="img/logo.png" /></center>
-	</div>
-	<div class="content animated bounceInUp">
-		<div class="server">
-			<span class="montserrat"><i class="em em-apple"></i> Witaj na oficjalnej stronie senge1337! <i class="em em-flag-pl"></i></span>
-		</div>
-		
+  <section class="menu cid-qTkzRZLJNu" once="menu" id="menu1-0">
 
-<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
-	</div>
-<center><a href="#top"><i class="em em-arrow_up"></i></a></center>
-<center><h3><span class="montserrat">&#9679; Strona stworzona przez <b><a href="http://fackcraft.tk">FackCraft</a></b> przerobiona na potrzeby senge1337.</span></h3></center>
-	</div>
-<script>
-window.onscroll = function() {myFunction()};
+    
 
-var navbar = document.getElementById("navbar");
-var sticky = navbar.offsetTop;
+    <nav class="navbar navbar-expand beta-menu navbar-dropdown align-items-center navbar-fixed-top navbar-toggleable-sm">
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </button>
+        <div class="menu-logo">
+            <div class="navbar-brand">
+                <span class="navbar-logo">
+                    <a href="https://mobirise.com">
+                         <img src="assets/images/logo2.png" alt="Mobirise" title="" style="height: 3.8rem;">
+                    </a>
+                </span>
+                <span class="navbar-caption-wrap"><a class="navbar-caption text-white display-4" href="https://mobirise.com">SENGE1337</a></span>
+            </div>
+        </div>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav nav-dropdown" data-app-modern-menu="true"><li class="nav-item">
+                    <a class="nav-link link text-white display-5" href="https://mobirise.com">
+                        <span class="mbri-home mbr-iconfont mbr-iconfont-btn"></span>
+                        Services
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link link text-white display-5" href="https://mobirise.com">
+                        <span class="mbri-search mbr-iconfont mbr-iconfont-btn"></span>
+                        About Us
+                    </a>
+                </li></ul>
+            <div class="navbar-buttons mbr-section-btn">
+                <a class="btn btn-sm btn-primary display-4" href="https://mobirise.com">
+                    <span class="mbri-save mbr-iconfont mbr-iconfont-btn "></span>
+                    Try It Now!
+                </a>
+            </div>
+        </div>
+    </nav>
+</section>
 
-function myFunction() {
-  if (window.pageYOffset >= sticky) {
-    navbar.classList.add("sticky")
-  } else {
-    navbar.classList.remove("sticky");
-  }
-}
-</script>
-	
+<section class="engine"><a href="https://mobirise.info/i">site creation software</a></section><section class="cid-qTkA127IK8 mbr-fullscreen mbr-parallax-background" id="header2-1">
+
+    
+
+    <div class="mbr-overlay" style="opacity: 0.6; background-color: rgb(15, 118, 153);"></div>
+
+    <div class="container align-center">
+        <div class="row justify-content-md-center">
+            <div class="mbr-white col-md-10">
+                <h1 class="mbr-section-title mbr-bold pb-3 mbr-fonts-style display-1">WITAJ NA STRONIE<br>SENGE1337&nbsp;</h1>
+                
+                <p class="mbr-text pb-3 mbr-fonts-style display-5">Mam nadzieję, że znajdziesz tu czego potrzebujesz!</p>
+                <div class="mbr-section-btn"><a class="btn btn-md btn-secondary display-7" href="https://mobirise.com">PORTFOLIO</a>
+                    <a class="btn btn-md btn-white-outline display-7" href="https://mobirise.com">XPOBIERALNIA</a></div>
+            </div>
+        </div>
+    </div>
+    <div class="mbr-arrow hidden-sm-down" aria-hidden="true">
+        <a href="#next">
+            <i class="mbri-down mbr-iconfont"></i>
+        </a>
+    </div>
+</section>
+
+<section class="cid-qTkAaeaxX5" id="footer1-2">
+
+    
+
+    
+
+    <div class="container">
+        <div class="media-container-row content text-white">
+            <div class="col-12 col-md-3">
+                <div class="media-wrap">
+                    <a href="https://mobirise.com/">
+                        <img src="assets/images/logo20.png" alt="Mobirise">
+                    </a>
+                </div>
+            </div>
+            <div class="col-12 col-md-3 mbr-fonts-style display-7">
+                <h5 class="pb-3">
+                    Address
+                </h5>
+                <p class="mbr-text">
+                    1234 Street Name
+                    <br>City, AA 99999
+                </p>
+            </div>
+            <div class="col-12 col-md-3 mbr-fonts-style display-7">
+                <h5 class="pb-3">
+                    Contacts
+                </h5>
+                <p class="mbr-text">
+                    Email: support@mobirise.com
+                    <br>Phone: +1 (0) 000 0000 001
+                    <br>Fax: +1 (0) 000 0000 002
+                </p>
+            </div>
+            <div class="col-12 col-md-3 mbr-fonts-style display-7">
+                <h5 class="pb-3">
+                    Links
+                </h5>
+                <p class="mbr-text">
+                    <a class="text-primary" href="https://mobirise.com/">Website builder</a>
+                    <br><a class="text-primary" href="https://mobirise.com/mobirise-free-win.zip">Download for Windows</a>
+                    <br><a class="text-primary" href="https://mobirise.com/mobirise-free-mac.zip">Download for Mac</a>
+                </p>
+            </div>
+        </div>
+        <div class="footer-lower">
+            <div class="media-container-row">
+                <div class="col-sm-12">
+                    <hr>
+                </div>
+            </div>
+            <div class="media-container-row mbr-white">
+                <div class="col-sm-6 copyright">
+                    <p class="mbr-text mbr-fonts-style display-7">
+                        © Copyright 2017 Mobirise - All Rights Reserved
+                    </p>
+                </div>
+                <div class="col-md-6">
+                    <div class="social-list align-right">
+                        <div class="soc-item">
+                            <a href="https://twitter.com/mobirise" target="_blank">
+                                <span class="socicon-twitter socicon mbr-iconfont mbr-iconfont-social"></span>
+                            </a>
+                        </div>
+                        <div class="soc-item">
+                            <a href="https://www.facebook.com/pages/Mobirise/1616226671953247" target="_blank">
+                                <span class="socicon-facebook socicon mbr-iconfont mbr-iconfont-social"></span>
+                            </a>
+                        </div>
+                        <div class="soc-item">
+                            <a href="https://www.youtube.com/c/mobirise" target="_blank">
+                                <span class="socicon-youtube socicon mbr-iconfont mbr-iconfont-social"></span>
+                            </a>
+                        </div>
+                        <div class="soc-item">
+                            <a href="https://instagram.com/mobirise" target="_blank">
+                                <span class="socicon-instagram socicon mbr-iconfont mbr-iconfont-social"></span>
+                            </a>
+                        </div>
+                        <div class="soc-item">
+                            <a href="https://plus.google.com/u/0/+Mobirise" target="_blank">
+                                <span class="socicon-googleplus socicon mbr-iconfont mbr-iconfont-social"></span>
+                            </a>
+                        </div>
+                        <div class="soc-item">
+                            <a href="https://www.behance.net/Mobirise" target="_blank">
+                                <span class="socicon-behance socicon mbr-iconfont mbr-iconfont-social"></span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+  <script src="assets/web/assets/jquery/jquery.min.js"></script>
+  <script src="assets/popper/popper.min.js"></script>
+  <script src="assets/tether/tether.min.js"></script>
+  <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+  <script src="assets/dropdown/js/script.min.js"></script>
+  <script src="assets/touchswipe/jquery.touch-swipe.min.js"></script>
+  <script src="assets/parallax/jarallax.min.js"></script>
+  <script src="assets/smoothscroll/smooth-scroll.js"></script>
+  <script src="assets/theme/js/script.js"></script>
+  
+  
 </body>
 </html>
