@@ -3,7 +3,7 @@ body {
 	/*Upload a new one to the img folder.*/
 	/*Make sure you name it 'minecraft.jpg'*/
 	background: linear-gradient(rgba(20, 26, 35,0.55),rgba(20, 26, 35, 0.55)),
-				url("https://cdn.glitch.com/3a9e455a-fa3e-4f74-afb0-d46ffd06e675%2F2020-05-14_15.07.07.png?v=1589462192094")  no-repeat center center fixed;
+				url("https://cdn.glitch.com/b0ca06fa-5648-4721-82f3-a85b0cf206e1%2Fparkour.png?v=1585953702936")  no-repeat center center fixed;
 	background-size: cover;
 	font-family: "Open Sans", Helvetica;
 	margin: 0;
